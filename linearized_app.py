@@ -150,9 +150,4 @@ def create_experience_old(importance, mandatory):
     st.multiselect(key=importance+mandatory+'required_education_level', default=[], label='', options=['None','Technician','Bachelor','Master', 'Doctor', 'PhD'],placeholder='Education Level')
     st.multiselect(key=importance+mandatory+'required_education_field', default=[], label='', options=['None','Related', 'Computer Sciences'],placeholder='Education Field')
 
-
-def create_fields(prefix:str): #Maybe add responsabilities?
-  #/html/body/div/div[1]/div[1]/div/div/div/section/div[1]/div/div/div/div[2]/details/div/div/div/div/div/div/div/div/div[1]/div/div[3]/div/div/div/div[3]/div/div[1]/div/div
-  job_title, location, experience, education, experience, skills, date_posted, salary = st.tabs(['👨‍🚀 Job Title', '🪐 Location', '🗯️ Language', '👩‍🎓 Education', '📑 Experience' , '📜 Skills', '📆 Date Posted', '💰 Salary'])
-
 create_page()
