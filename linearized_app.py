@@ -39,6 +39,7 @@ def create_job_title(container):
       st_tags(key='job_title_contains', value=[], label='', suggestions=['analyst', 'business intelligence', 'data'], text='Phrases that should be in job title')
       st.text('Title Must NOT include:')
       st_tags(key='job_title_lacks', value=[], label='', suggestions=['intern', 'sr', 'data entry'], text='Phrases that should not appear in job title ')
+
 def create_location(container):
   with container:
     st.markdown('### 🪐 Location')
