@@ -1,0 +1,80 @@
+/*Allow tabs bigger than the size of the screen to wrap arround*/
+div.st-ae>div>div.st-af.st-ag.st-ah.st-ai.st-aj.st-ak.st-al.st-am.st-an.st-ao.st-ap.st-aq.st-ar{
+    flex-wrap: wrap;
+    row-gap: 0rem;
+}
+
+/* This can be used to regulate spacing before and after the elements.
+div.st-ae>div>div.st-af.st-ag.st-ah.st-ai.st-aj.st-ak.st-al.st-am.st-an.st-ao.st-ap.st-aq.st-ar > * {
+    margin-bottom: -10px;
+    margin-top: -10px;
+}*/ 
+
+h2{
+    color:#25a0fd;
+    text-align: center;
+}
+
+/*
+text-align: center;
+place-content: center; para divs
+*/
+
+/* Gave up on respecting the computer's theme because streamlit tags isnt changeable via this css
+.st-bd{
+  color:#99c2ff;
+}
+.st-cz{
+    border-color: #99c2ff;
+}
+.st-hf{
+    background-image: linear-gradient(to right, #99c2ff 0%, #99c2ff 25%, rgba(151, 166, 195, 0.25) 25%, rgba(151, 166, 195, 0.25) 100%);
+}
+.st-c2{
+    background-color: #99c2ff;
+}
+:root {
+    --primary-color: #99c2ff;
+}
+
+This would solve it but its not reaching that particular span because streamlit tags uses its own streamlit css apparently.
+span{
+    --rti-tag: #99c2ff !important; 
+}
+span.rti--container{
+    --rti-tag: #99c2ff !important;
+}
+*/
+
+h3{
+    color:rgb(56, 158, 221);
+    padding-top: 0.2rem;
+}
+
+.appview-container .main .block-container {
+    padding-top: 1.5rem; /*Less than 3 rem will make elements at the top have  risk of not showing*/
+    padding-bottom: 1rem;
+}
+
+div.row-widget>button{
+    width: 100%;
+}
+
+summary>span{
+    justify-content: center;
+}
+
+/* Make the vast mayority of the components have reasonable space, leaving the option of adding a blank line if you want separation */
+div.st-emotion-cache-zo7g4l{
+    row-gap: 0.12rem;
+}
+
+/* Remove the border of the form without causing chaos*/
+details>div>div>div>div>div.st-emotion-cache-r421ms{
+    border-color:white;
+}
+
+/* Hides too much
+.element-container{
+    display: none;
+}*/
