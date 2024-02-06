@@ -139,8 +139,6 @@ def generate_state_text():
     #'👨‍🚀 Job Title', '🪐 Location', '🗯️ Language', '👩‍🎓 Education', '📑 Experience' , '📜 Skills', '📆 Date Posted', '💰 Salary'
 
 
-
-
 def create_experience_old(importance, mandatory):
     st.slider(key=importance+mandatory+'required_experience_in_fields_you_hold_experience',  label='', min_value=0, max_value=20, value=(0,20), format='%x years')
     st.text('Experience in other fields')
