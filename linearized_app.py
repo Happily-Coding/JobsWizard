@@ -112,15 +112,14 @@ def create_post_date(container):
 
 def create_applicant_numbers(container): #It could be included in a new category called post details along wiht applicant numbers and compensation
     with container:
-      st.markdown('### 👥 Number of applicants')#👨🏻‍💼🧑🏼‍🤝‍🧑🏾
+      st.markdown('### 👥 Number of applicants')#Use one of this emojis instead?👨🏻‍💼🧑🏼‍🤝‍🧑🏾
       st.slider(key='max_applicants_already_applied', label='', min_value=0, max_value=72, step=1, value=(0,72), format='%d hours ago')
 
 def create_applicant_numbers(container):
     with container:
-      st.markdown('### 👥 Companies')#👨🏻‍💼🧑🏼‍🤝‍🧑🏾
-      st.multiselect(key=acceptable_multiselect_key, default=[], label='',label_visibility='collapsed', format_func=lambda x: f"in {x} ", options=['Argentina', 'United States', 'Others'],placeholder='In countries')
-
-      #st multiselect companies que incluir y que excluir
+      st.markdown('### 🏭 Companies')
+      st.multiselect(key='acceptable_companies', default=[], label='',label_visibility='collapsed', format_func=lambda x: f"from {x} ", options=[' Any', 'Accenture', 'OnyxianLTD'],placeholder='Company')
+      st.multiselect(key='not_acceptable_companies', default=[], label='',label_visibility='collapsed', format_func=lambda x: f"not from {x} ", options=[' Any', 'Accenture', 'OnyxianLTD'],placeholder='Company')
 
 
 def create_compensation(container):
