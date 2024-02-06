@@ -64,8 +64,12 @@ summary>span{
     justify-content: center;
 }
 
-/* Make the vast mayority of the components have reasonable space, leaving the option of adding a blank line if you want separation */
-div.st-emotion-cache-zo7g4l{
+/* Make the vast mayority of the components have reasonable space,
+ leaving the option of adding a blank line if you want separation
+ Used to have the class selector of the class id of the current streamlit version.
+ stVerticalBlock testid helped find it but it was prone to breaking. Use div selector unless it breaks.
+*/
+div{
     row-gap: 0.12rem;
 }
 
