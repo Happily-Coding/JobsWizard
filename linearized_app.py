@@ -103,7 +103,7 @@ def create_post_date(container):
      with container:
       st.markdown('### 📆 Date Posted')
       st.markdown('**Job was posted between:**')
-      st.slider(key=prefix+'job_was_posted_between', label='', min_value=0, max_value=72, step=1, value=(0,72), format='%d hours ago')
+      st.slider(key='job_was_posted_between', label='', min_value=0, max_value=72, step=1, value=(0,72), format='%d hours ago')
       st.markdown('')
       st.markdown("""
       ***Our job database only contains jobs posted in the last 3 days because:***
